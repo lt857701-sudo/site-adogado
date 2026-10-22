@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bernstein Advocacia | Excelência Jurídica e Visão Estratégica</title>
+<!-- Google Fonts: Cormorant Garamond, Cinzel & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome Icons for crisp legal symbology -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#102233',
+              deep: '#0A1622',
+              gold: '#C7A36A',
+              goldLight: '#D8BC8F',
+              goldDark: '#A88652',
+              cream: '#F9F8F5',
+              surface: '#F4F4F1',
+              charcoal: '#22252A',
+              muted: '#636B78'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            cinzel: ['"Cinzel"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom CSS -->
+<style data-purpose="typography">
+    .font-cinzel { font-family: 'Cinzel', serif; }
+    .font-cormorant { font-family: 'Cormorant Garamond', Georgia, serif; }
+    .tracking-widest-plus { letter-spacing: 0.22em; }
+    .tracking-luxury { letter-spacing: 0.15em; }
+  </style>
+<style data-purpose="mosaic-effects">
+    /* Subtle geometric luxury pattern mimicking reference artwork */
+    .mosaic-bg-layer {
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(197, 166, 117, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(197, 166, 117, 0.05) 0%, transparent 40%),
+        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+    }
+    
+    .pixel-tile {
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+  </style>
+<!-- END: Custom CSS -->
+<!-- Hero Entrance Animation -->
+<style data-purpose="hero-animation">
+  @keyframes hero-enter {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes hero-enter-line {
+    0% {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-prefix {
+    animation: hero-enter 550ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 150ms backwards both;
+  }
+
+  .hero-line-1 {
+    animation: hero-enter-line 700ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 320ms backwards both;
+  }
+
+  .hero-line-2 {
+    animation: hero-enter-line 700ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 440ms backwards both;
+  }
+
+  .hero-line-3 {
+    animation: hero-enter-line 700ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 560ms backwards both;
+  }
+
+  .hero-line-4 {
+    animation: hero-enter-line 700ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 680ms backwards both;
+  }
+
+  .hero-paragraph {
+    animation: hero-enter 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 820ms backwards both;
+  }
+
+  .hero-btn-1 {
+    animation: hero-enter 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 940ms backwards both;
+  }
+
+  .hero-btn-2 {
+    animation: hero-enter 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 1040ms backwards both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-prefix,
+    .hero-line-1,
+    .hero-line-2,
+    .hero-line-3,
+    .hero-line-4,
+    .hero-paragraph,
+    .hero-btn-1,
+    .hero-btn-2 {
+      animation-duration: 0.01ms !important;
+      animation-delay: 0s !important;
+      animation-iteration-count: 1 !important;
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+  }
+</style>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="bg-white text-brand-charcoal font-sans antialiased selection:bg-brand-gold selection:text-white">
+<!-- BEGIN: TopBar -->
+<div class="bg-brand-deep text-neutral-300 text-xs border-b border-white/10 hidden md:block" data-purpose="topbar-info">
+<div class="max-w-7xl mx-auto px-6 py-2.5 flex justify-between items-center tracking-wider">
+<div class="flex items-center space-x-6">
+<span class="flex items-center"><i class="fa-regular fa-clock text-brand-gold mr-2 text-[11px]"></i> Segunda – Sexta: 09h – 18h</span>
+<span class="text-white/20">|</span>
+<span class="flex items-center"><i class="fa-solid fa-location-dot text-brand-gold mr-2 text-[11px]"></i> Av. Brigadeiro Faria Lima, 3477 - Itaim Bibi, São Paulo</span>
+</div>
+<div class="flex items-center space-x-4">
+<span class="text-neutral-400">Visite nossas redes:</span>
+<a class="text-neutral-300 hover:text-brand-gold transition-colors" href="#contato"><i class="fa-brands fa-linkedin-in"></i></a>
+<a class="text-neutral-300 hover:text-brand-gold transition-colors" href="#contato"><i class="fa-brands fa-instagram"></i></a>
+<a class="text-neutral-300 hover:text-brand-gold transition-colors" href="#contato"><i class="fa-brands fa-x-twitter"></i></a>
+</div>
+</div>
+</div>
+<!-- END: TopBar -->
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-neutral-100 shadow-sm" data-purpose="site-navigation">
+<div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+<!-- Brand Logo strictly matching the aesthetic -->
+<a class="flex items-center space-x-3 group" data-purpose="brand-logo" href="#">
+<div class="w-11 h-11 bg-brand-navy border border-brand-gold/60 flex items-center justify-center text-white font-cinzel text-2xl font-bold transition-transform duration-300 group-hover:border-brand-gold">
+          B<span class="text-brand-gold">.</span>
+</div>
+<div class="flex flex-col">
+<span class="font-cinzel tracking-widest-plus text-xl font-bold text-brand-navy leading-none">BERNSTEIN</span>
+<span class="text-[9px] uppercase tracking-[0.32em] text-neutral-400 font-sans mt-1">Advocacia Empresarial</span>
+</div>
+</a>
+<!-- Navigation links -->
+<nav class="hidden lg:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider text-neutral-600">
+<a class="text-brand-navy border-b-2 border-brand-gold pb-1 font-bold" href="#inicio">Início</a>
+<a class="hover:text-brand-gold transition-colors pb-1" href="#sobre">O Escritório</a>
+<a class="hover:text-brand-gold transition-colors pb-1" href="#atuacao">Áreas de Atuação</a>
+<a class="hover:text-brand-gold transition-colors pb-1" href="#experiencia">Nossa Equipe</a>
+<a class="hover:text-brand-gold transition-colors pb-1" href="#contato">Artigos &amp; Insights</a>
+<a class="hover:text-brand-gold transition-colors pb-1" href="#contato">Contato</a>
+</nav>
+<!-- Primary CTA button -->
+<div class="flex items-center space-x-4">
+<a class="hidden sm:inline-flex items-center justify-center px-6 py-3.5 bg-brand-gold hover:bg-brand-goldDark text-white text-xs uppercase tracking-widest font-semibold transition-all duration-300 shadow-sm hover:shadow-md" href="#contato">
+<i class="fa-solid fa-phone-volume mr-2 text-[11px]"></i> Agendar Consulta
+        </a>
+<button aria-label="Abrir Menu" class="lg:hidden text-brand-navy p-2 hover:text-brand-gold text-xl" type="button">
+<i class="fa-solid fa-bars"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main id="inicio">
+<!-- BEGIN: HeroSection -->
+<section class="relative text-white overflow-hidden" data-purpose="hero-section" style="background-image: url('assets/images/heroes/advogado-hero.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+<!-- Camada de gradiente escuro à esquerda para legibilidade do texto -->
+<div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(9, 23, 35, 0.95) 0%, rgba(9, 23, 35, 0.72) 35%, rgba(9, 23, 35, 0.18) 70%, rgba(9, 23, 35, 0.05) 100%);"></div>
+<!-- Mosaic decorative overlay sutil -->
+<div class="absolute inset-0 opacity-10 pointer-events-none mosaic-bg-layer"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[700px] lg:min-h-[850px]">
+<!-- Hero Content: Texto sobreposto à esquerda sobre a fotografia -->
+<div class="lg:col-span-7 space-y-7 pr-0 lg:pr-8">
+<div class="flex items-center space-x-4">
+<span class="w-10 h-[1.5px] bg-brand-gold"></span>
+<span class="hero-prefix text-xs tracking-widest-plus uppercase text-brand-gold font-semibold font-sans">A Heritage of Results • Tradição &amp; Estratégia</span>
+</div>
+<h1 class="font-serif text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-semibold leading-[1.05] text-white">
+<span class="hero-line hero-line-1 block">CONSTRUÍMOS</span>
+<span class="hero-line hero-line-2 block">RELAÇÕES</span>
+<span class="hero-line hero-line-3 block text-brand-gold italic font-normal">BASEADAS EM</span>
+<span class="hero-line hero-line-4 block text-brand-gold italic font-normal">CONFIANÇA</span>
+</h1>
+<p class="hero-paragraph text-neutral-300 text-base md:text-lg font-light leading-relaxed max-w-xl">
+              Assessoria jurídica estratégica de excelência para empresas, líderes corporativos e organizações que exigem precisão técnica, proteção patrimonial e segurança para grandes decisões.
+            </p>
+<div class="pt-4 flex flex-wrap gap-4 sm:gap-5 items-center">
+<a class="hero-btn-1 px-8 py-4 bg-brand-gold hover:bg-brand-goldDark text-white text-xs uppercase tracking-widest font-semibold transition-all shadow-lg hover:shadow-xl" href="#atuacao">
+                CONHEÇA NOSSAS SOLUÇÕES
+              </a>
+<a class="hero-btn-2 px-8 py-4 bg-transparent border border-brand-gold/50 hover:border-brand-gold/80 text-white text-xs uppercase tracking-widest font-semibold transition-all" href="#contato">
+                Agende uma Consulta
+              </a>
+</div>
+<!-- Discrete key numbers badge -->
+<div class="pt-8 border-t border-white/10 grid grid-cols-3 gap-6 max-w-lg">
+<div>
+<p class="text-2xl font-serif text-brand-gold font-semibold">25+</p>
+<p class="text-xs uppercase tracking-wider text-neutral-400 mt-1">Anos de Atuação</p>
+</div>
+<div>
+<p class="text-2xl font-serif text-brand-gold font-semibold">R$ 4.2B</p>
+<p class="text-xs uppercase tracking-wider text-neutral-400 mt-1">Sob Gestão Jurídica</p>
+</div>
+<div>
+<p class="text-2xl font-serif text-brand-gold font-semibold">98.4%</p>
+<p class="text-xs uppercase tracking-wider text-neutral-400 mt-1">Decisões Favoráveis</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: FloatingCardsSection -->
+<!-- 3 floating cards intersecting the dark Hero and clean light background -->
+<section class="relative -mt-20 md:-mt-24 z-30 px-6 max-w-7xl mx-auto" data-purpose="highlight-cards">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+<!-- Card 1 -->
+<div class="bg-white rounded-none border border-neutral-200/90 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden">
+<div class="h-44 overflow-hidden relative">
+<img alt="Consultoria Empresarial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0bSGISbAT1eJLwdz0iOtqHSZDE-768sYprjgdAuJJDI0St1W_t_Ko1w3j-6Pr1Jxp8nu6XdQ_MylueHAGT03Ai9xww2zml_cwoh0L9rr8nqAWKuJ10IaL2qajgV9dkatSRGKyCWw7Y1RcTQq2HBUIlrwSbkx7Hj72Rr1YcyfPDE6gqPg0au7_Agkvm8B9BDl_zkr6v8wHfKduVZLeOrw8W-sDK2InZHSTNE2CFLQr9UUsVOAQHOdA"/>
+<div class="absolute inset-0 bg-brand-navy/20"></div>
+</div>
+<div class="p-7 flex-1 flex flex-col justify-between bg-white">
+<div>
+<span class="text-[10px] uppercase tracking-widest-plus font-bold text-brand-gold">Clear Concise Advice</span>
+<h3 class="font-serif text-2xl font-bold text-brand-navy mt-1.5 mb-3">Negócios com Segurança</h3>
+<p class="text-neutral-600 text-xs leading-relaxed font-sans">
+                Orientação jurídica estratégica para decisões empresariais complexas, blindagem de patrimônio e estruturação societária perene.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-neutral-100">
+<a class="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-brand-gold hover:text-brand-goldDark transition-colors" href="#atuacao">
+                Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-none border border-neutral-200/90 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden">
+<div class="h-44 overflow-hidden relative">
+<img alt="Assessoria Jurídica e Negociação" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS34_ya-0P2a2R09RK7F8hzLkCzFw1Kl3-pnF9iLJbkQwnevHzPJc49He7prnmF3JNVKQEZJpIlbjmn1u-kmWn5ntfOaY8rlk9d2Du8por-wUiYQnadY9DqXTTh_KZb06Dpd8nYxQq6Q6vuxzQo9u7YwjWhZmxjqw4IleWVPZ9qzaaCM75WJdcr16SvSHhTzdTjPxT2G-VSrtKi7sEaaR-5s1pZjH8aVqIyAzE1ur_ZAo0YKXlxbPQ"/>
+<div class="absolute inset-0 bg-brand-navy/20"></div>
+</div>
+<div class="p-7 flex-1 flex flex-col justify-between bg-white">
+<div>
+<span class="text-[10px] uppercase tracking-widest-plus font-bold text-brand-gold">Collaboration Matters</span>
+<h3 class="font-serif text-2xl font-bold text-brand-navy mt-1.5 mb-3">Soluções Estratégicas</h3>
+<p class="text-neutral-600 text-xs leading-relaxed font-sans">
+                Atuação preventiva e personalizada para proteger interesses contratuais, mitigar contingências fiscais e gerenciar riscos corporativos.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-neutral-100">
+<a class="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-brand-gold hover:text-brand-goldDark transition-colors" href="#atuacao">
+                Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-none border border-neutral-200/90 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden">
+<div class="h-44 overflow-hidden relative">
+<img alt="Contencioso Estratégico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2PMvKRadDwg9lh1nvkFJaelZkQOMnD6au9QOMHcRf4NYIMmdWUfv2zWvkToSDmXWY17lmu9NArTBsPmTGdGsq0pr-8SobQSZhtuksLvnvxjgeJYevYL53Myt6L8uiGtKkKNTxvQex5W4nzfTf4MWH_vcuuLj1iz_GyCJbls8qpa-M21Y3TOTfu9MOyPxph5rL9bcImUDkc7qMKtkKoHlneUOB2gCl4FllYYkZT2VpM8M53eJa0e3N"/>
+<div class="absolute inset-0 bg-brand-navy/20"></div>
+</div>
+<div class="p-7 flex-1 flex flex-col justify-between bg-white">
+<div>
+<span class="text-[10px] uppercase tracking-widest-plus font-bold text-brand-gold">Proof, Not Promises</span>
+<h3 class="font-serif text-2xl font-bold text-brand-navy mt-1.5 mb-3">Resultados Consistentes</h3>
+<p class="text-neutral-600 text-xs leading-relaxed font-sans">
+                Compromisso com a solidez técnica, transparência incondicional e a defesa combativa e responsável dos interesses em cortes superiores.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-neutral-100">
+<a class="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-brand-gold hover:text-brand-goldDark transition-colors" href="#atuacao">
+                Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FloatingCardsSection -->
+<!-- BEGIN: CommittedSection -->
+<section class="py-24 lg:py-32 bg-white" data-purpose="about-section" id="sobre">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Column: Details & 2x2 Feature Grid -->
+<div class="lg:col-span-7">
+<div class="flex items-center space-x-4 mb-4">
+<span class="w-8 h-[1.5px] bg-brand-gold"></span>
+<span class="text-xs uppercase tracking-widest-plus text-brand-gold font-semibold">Your Business Is Safe With Bernstein</span>
+</div>
+<h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-navy uppercase tracking-tight">
+              COMPROMETIDOS COM <br/>
+<span class="text-brand-gold italic normal-case font-normal">O Seu Negócio</span>
+</h2>
+<p class="mt-6 text-neutral-600 text-sm sm:text-base leading-relaxed">
+              Somos advogados com visão de negócios preparados para responder prontamente aos desafios regulatórios, fiscais e operacionais de empresas de grande e médio porte, governos e conglomerados em âmbito nacional e internacional.
+            </p>
+<!-- 2x2 Grid with Distinct Icons -->
+<div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
+<!-- Feature 1 -->
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-none bg-brand-cream border border-brand-gold/50 flex items-center justify-center text-brand-gold text-lg shadow-sm">
+<i class="fa-solid fa-scale-balanced"></i>
+</div>
+<div>
+<h4 class="font-serif text-lg font-bold text-brand-navy tracking-wide uppercase">Estratégia Jurídica</h4>
+<p class="text-xs text-neutral-600 mt-1 leading-relaxed">
+                    Análise criteriosa e arquitetura legal sob medida, alinhada rigorosamente aos objetivos de expansão da sua empresa.
+                  </p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-none bg-brand-cream border border-brand-gold/50 flex items-center justify-center text-brand-gold text-lg shadow-sm">
+<i class="fa-solid fa-user-tie"></i>
+</div>
+<div>
+<h4 class="font-serif text-lg font-bold text-brand-navy tracking-wide uppercase">Equipe Especializada</h4>
+<p class="text-xs text-neutral-600 mt-1 leading-relaxed">
+                    Mestres e doutores com sólida experiência corporativa prontos para litígios complexos e negociações de alto impacto.
+                  </p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-none bg-brand-cream border border-brand-gold/50 flex items-center justify-center text-brand-gold text-lg shadow-sm">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+<div>
+<h4 class="font-serif text-lg font-bold text-brand-navy tracking-wide uppercase">Atuação Preventiva</h4>
+<p class="text-xs text-neutral-600 mt-1 leading-relaxed">
+                    Identificação ágil de riscos contratuais e conformidade regulatória para resguardar o futuro do capital social.
+                  </p>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-none bg-brand-cream border border-brand-gold/50 flex items-center justify-center text-brand-gold text-lg shadow-sm">
+<i class="fa-solid fa-handshake-angle"></i>
+</div>
+<div>
+<h4 class="font-serif text-lg font-bold text-brand-navy tracking-wide uppercase">Relacionamento Próximo</h4>
+<p class="text-xs text-neutral-600 mt-1 leading-relaxed">
+                    Comunicação executiva direta, relatórios claros e acompanhamento pessoal dos sócios em cada etapa processual.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Corporate Picture with Overlaid Navy Manifesto Card and Pixel Blocks -->
+<div class="lg:col-span-5 relative">
+<!-- Geometric pixel elements in background -->
+<div class="absolute -right-4 -top-6 grid grid-cols-3 gap-2 opacity-70">
+<span class="w-8 h-8 bg-brand-navy"></span>
+<span class="w-8 h-8 bg-brand-gold/60"></span>
+<span class="w-8 h-8 bg-stone-200"></span>
+</div>
+<div class="relative overflow-hidden shadow-2xl">
+<img alt="Equipe Bernstein em Reunião Executiva" class="w-full h-[460px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt3Y2hiBHcb1PY7C_CoaihUkP8gBwH5sRUZO69Ebo0bOvuPrw7cs3v5ngIWDYw69IVBIVrZxYlySAcBASGCLjuX9pDPmU2UyfmBsSjPdI71ADBkbvRYU6nQFydSpItU_aPaTZ4I-FByiJqRtr0p8F4KNPZpqM798nRXtPbGedzpErwjGIN6BhfIMRBuBJNBcIFYrvxPiQ0hQ0W3KWeoSerpDwEadhyHcyvSEwQWbJGwKFpDA1cY5xy"/>
+</div>
+<!-- Overlaid dark navy statement box matching reference -->
+<div class="mt-[-60px] sm:ml-6 relative z-20 bg-brand-navy text-white p-8 border-l-4 border-brand-gold shadow-2xl max-w-md">
+<p class="font-serif text-sm sm:text-base uppercase tracking-wider leading-relaxed text-neutral-200">
+                "Trabalhamos ao lado dos nossos clientes para fortalecer decisões, mitigar exposições e garantir perenidade aos seus negócios."
+              </p>
+<div class="mt-4 pt-3 border-t border-white/15 flex items-center justify-between">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-gold">Bernstein Advocacia</span>
+<span class="text-[10px] text-neutral-400">São Paulo • SP</span>
+</div>
+</div>
+<!-- Accent block for depth -->
+<div class="absolute -bottom-4 right-2 w-16 h-16 bg-stone-100 -z-10 border border-neutral-300 hidden sm:block"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CommittedSection -->
+<!-- BEGIN: ExperienceTrustedSection -->
+<section class="py-24 bg-brand-cream border-t border-b border-neutral-200/60 overflow-hidden relative" data-purpose="experience-section" id="experiencia">
+<!-- Distinct mosaic pixel dissolution as visible in third section of reference image -->
+<div class="absolute right-0 top-0 bottom-0 w-1/2 pointer-events-none opacity-25 hidden xl:block">
+<div class="absolute right-96 top-20 w-8 h-8 bg-stone-700"></div>
+<div class="absolute right-80 top-36 w-8 h-8 bg-brand-gold"></div>
+<div class="absolute right-72 top-28 w-8 h-8 bg-brand-navy"></div>
+<div class="absolute right-64 top-48 w-8 h-8 bg-stone-500"></div>
+<div class="absolute right-88 top-64 w-8 h-8 bg-brand-goldDark"></div>
+</div>
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Column: Content + 3 Circular Process Icons -->
+<div class="lg:col-span-7 space-y-6">
+<div class="flex items-center space-x-4">
+<span class="w-8 h-[1.5px] bg-brand-gold"></span>
+<span class="text-xs uppercase tracking-widest-plus text-brand-gold font-semibold">Experiência Que Orienta Decisões</span>
+</div>
+<h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-navy uppercase tracking-tight">
+              EXPERIÊNCIA QUE <br/>
+<span class="text-brand-gold italic normal-case font-normal">Gera Confiança</span>
+</h2>
+<p class="text-neutral-600 text-sm leading-relaxed">
+              Nossos advogados pensam como empresários. Grande parte do nosso corpo jurídico possui formação interdisciplinar em finanças, governança e economia, proporcionando uma compreensão prática imediata dos reais impasses enfrentados pelo setor produtivo.
+            </p>
+<p class="text-neutral-600 text-sm leading-relaxed">
+              Nosso papel ultrapassa a tradicional emissão de pareceres: atuamos como verdadeiros conselheiros de confiança em operações de fusões, disputas acionárias de alta relevância e reorganizações estratégicas.
+            </p>
+<!-- 3 Circular Badges in Horizontal Flow -->
+<div class="pt-8 border-t border-neutral-200 grid grid-cols-3 gap-4 sm:gap-6 text-center">
+<!-- Circle 1 -->
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-brand-gold bg-white flex items-center justify-center text-brand-navy text-xl sm:text-2xl shadow-sm mb-3">
+<i class="fa-solid fa-chess-knight text-brand-gold"></i>
+</div>
+<h5 class="font-serif text-sm sm:text-base font-bold text-brand-navy uppercase tracking-wider">Estratégia</h5>
+<p class="text-[11px] text-neutral-500 mt-1 hidden sm:block">Planejamento meticuloso para cada cenário de risco.</p>
+</div>
+<!-- Circle 2 -->
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-brand-gold bg-white flex items-center justify-center text-brand-navy text-xl sm:text-2xl shadow-sm mb-3">
+<i class="fa-solid fa-handshake text-brand-gold"></i>
+</div>
+<h5 class="font-serif text-sm sm:text-base font-bold text-brand-navy uppercase tracking-wider">Cooperação</h5>
+<p class="text-[11px] text-neutral-500 mt-1 hidden sm:block">Parceria de longo prazo com transparência total.</p>
+</div>
+<!-- Circle 3 -->
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-brand-gold bg-white flex items-center justify-center text-brand-navy text-xl sm:text-2xl shadow-sm mb-3">
+<i class="fa-solid fa-award text-brand-gold"></i>
+</div>
+<h5 class="font-serif text-sm sm:text-base font-bold text-brand-navy uppercase tracking-wider">Soluções</h5>
+<p class="text-[11px] text-neutral-500 mt-1 hidden sm:block">Defesa resoluta com excelência jurídica comprovada.</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Editorial Executive Portrait with Geometric Mosaic Edge -->
+<div class="lg:col-span-5 relative flex justify-center">
+<!-- Graphic Pixel Blocks Layer Framing the Photo -->
+<div class="absolute -left-6 top-10 flex flex-col space-y-2 z-20">
+<div class="w-8 h-8 bg-brand-deep shadow-md"></div>
+<div class="w-8 h-8 bg-brand-gold"></div>
+<div class="w-8 h-8 bg-stone-600"></div>
+</div>
+<div class="relative w-full max-w-sm rounded-none overflow-hidden shadow-2xl border border-neutral-300">
+<img alt="Advogado Sênior Bernstein Advocacia" class="w-full h-[500px] object-cover object-top filter contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqRWtBeaLtEQ2ckcyGtEQA_gzzika_Pj8Z5OW_jzkJZd8WJMY55D3elOmr_WeCTFLBGYhMu7sist7w0-VyIE4y6yvawBbx8YZ8Dp5RGZHF_Ohgrn4PZ0JfS1NBg8OjNhJL1Fno9DN9JMgOekOT_LmnMdhr135bZcyxu8c3g9w8MeJazSENi0-RDyAQ2Rfn13WtS_9pM613z2ddoIoK7GzSxekxhggwawiYHErMKcqjLoGKOvpL4VhD"/>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-brand-deep/90 via-brand-deep/30 to-transparent p-6 text-white">
+<p class="text-xs uppercase tracking-widest text-brand-gold font-semibold">Conselho Consultivo</p>
+<h4 class="font-serif text-xl font-bold text-white">Dr. Leonardo Bernstein</h4>
+<p class="text-xs text-neutral-300 font-sans mt-0.5">Especialista em Direito Societário e Fusões</p>
+</div>
+</div>
+<!-- Geometric decorative block below -->
+<div class="absolute -bottom-6 -right-4 w-28 h-28 bg-brand-gold/15 border border-brand-gold/40 -z-10 hidden sm:block"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ExperienceTrustedSection -->
+<!-- BEGIN: PracticeAreasSection -->
+<section class="py-24 bg-white" data-purpose="practice-areas" id="atuacao">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center space-x-3 mb-3">
+<span class="w-8 h-[1.5px] bg-brand-gold"></span>
+<span class="text-xs uppercase tracking-widest-plus text-brand-gold font-semibold">Especialidades Corporativas</span>
+<span class="w-8 h-[1.5px] bg-brand-gold"></span>
+</div>
+<h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-navy uppercase">Áreas de Atuação</h2>
+<p class="text-neutral-500 text-sm mt-4 font-light">
+            Assessoria de alta performance para cenários jurídicos complexos em todo o território nacional.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Area 1 -->
+<div class="p-8 border border-neutral-200 hover:border-brand-gold bg-brand-cream/30 hover:bg-white transition-all duration-300 group hover:shadow-xl">
+<div class="w-12 h-12 bg-brand-navy text-brand-gold flex items-center justify-center text-xl mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+<i class="fa-solid fa-briefcase"></i>
+</div>
+<h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Direito Empresarial</h3>
+<p class="text-neutral-600 text-xs leading-relaxed mb-6 font-sans">
+              Estruturação e suporte legal contínuo para operações de comércio, indústria e serviços de alta complexidade.
+            </p>
+<a class="text-xs font-bold uppercase tracking-wider text-brand-gold hover:text-brand-goldDark flex items-center" href="#contato">
+              Detalhes da Prática <i class="fa-solid fa-angle-right ml-1 text-[11px]"></i>
+</a>
+</div>
+<!-- Area 2 -->
+<div class="p-8 border border-neutral-200 hover:border-brand-gold bg-brand-cream/30 hover:bg-white transition-all duration-300 group hover:shadow-xl">
+<div class="w-12 h-12 bg-brand-navy text-brand-gold flex items-center justify-center text-xl mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+<i class="fa-solid fa-file-contract"></i>
+</div>
+<h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Contratos &amp; Negociações</h3>
+<p class="text-neutral-600 text-xs leading-relaxed mb-6 font-sans">
+              Elaboração, auditoria minuciosa e negociação de contratos nacionais e internacionais com proteção de garantias.
+            </p>
+<a class="text-xs font-bold uppercase tracking-wider text-brand-gold hover:text-brand-goldDark flex items-center" href="#contato">
+              Detalhes da Prática <i class="fa-solid fa-angle-right ml-1 text-[11px]"></i>
+</a>
+</div>
+<!-- Area 3 -->
+<div class="p-8 border border-neutral-200 hover:border-brand-gold bg-brand-cream/30 hover:bg-white transition-all duration-300 group hover:shadow-xl">
+<div class="w-12 h-12 bg-brand-navy text-brand-gold flex items-center justify-center text-xl mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+<i class="fa-solid fa-diagram-project"></i>
+</div>
+<h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Direito Societário &amp; M&amp;A</h3>
+<p class="text-neutral-600 text-xs leading-relaxed mb-6 font-sans">
+              Fusões, aquisições, dissoluções de sociedade, acordos de sócios e governança corporativa de alto padrão.
+            </p>
+<a class="text-xs font-bold uppercase tracking-wider text-brand-gold hover:text-brand-goldDark flex items-center" href="#contato">
+              Detalhes da Prática <i class="fa-solid fa-angle-right ml-1 text-[11px]"></i>
+</a>
+</div>
+<!-- Area 4 -->
+<div class="p-8 border border-neutral-200 hover:border-brand-gold bg-brand-cream/30 hover:bg-white transition-all duration-300 group hover:shadow-xl">
+<div class="w-12 h-12 bg-brand-navy text-brand-gold flex items-center justify-center text-xl mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+<h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Consultoria Preventiva</h3>
+<p class="text-neutral-600 text-xs leading-relaxed mb-6 font-sans">
+              Diagnósticos contínuos de compliance corporativo e adequação regulatória para supressão prévia de passivos.
+            </p>
+<a class="text-xs font-bold uppercase tracking-wider text-brand-gold hover:text-brand-goldDark flex items-center" href="#contato">
+              Detalhes da Prática <i class="fa-solid fa-angle-right ml-1 text-[11px]"></i>
+</a>
+</div>
+<!-- Area 5 -->
+<div class="p-8 border border-neutral-200 hover:border-brand-gold bg-brand-cream/30 hover:bg-white transition-all duration-300 group hover:shadow-xl">
+<div class="w-12 h-12 bg-brand-navy text-brand-gold flex items-center justify-center text-xl mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+<i class="fa-solid fa-gavel"></i>
+</div>
+<h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Contencioso Estratégico</h3>
+<p class="text-neutral-600 text-xs leading-relaxed mb-6 font-sans">
+              Representação enérgica em disputas arbitrais, tribunais de justiça estaduais, STJ e Supremo Tribunal Federal.
+            </p>
+<a class="text-xs font-bold uppercase tracking-wider text-brand-gold hover:text-brand-goldDark flex items-center" href="#contato">
+              Detalhes da Prática <i class="fa-solid fa-angle-right ml-1 text-[11px]"></i>
+</a>
+</div>
+<!-- Area 6 -->
+<div class="p-8 border border-neutral-200 hover:border-brand-gold bg-brand-cream/30 hover:bg-white transition-all duration-300 group hover:shadow-xl">
+<div class="w-12 h-12 bg-brand-navy text-brand-gold flex items-center justify-center text-xl mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+<i class="fa-solid fa-coins"></i>
+</div>
+<h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Planejamento Patrimonial</h3>
+<p class="text-neutral-600 text-xs leading-relaxed mb-6 font-sans">
+              Estruturação sucessória de empresas familiares, holdings patrimoniais e proteção de bens com eficiência fiscal.
+            </p>
+<a class="text-xs font-bold uppercase tracking-wider text-brand-gold hover:text-brand-goldDark flex items-center" href="#contato">
+              Detalhes da Prática <i class="fa-solid fa-angle-right ml-1 text-[11px]"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: PracticeAreasSection -->
+<!-- BEGIN: ContactConsultationSection -->
+<section class="py-24 bg-brand-navy text-white relative mosaic-bg-layer" data-purpose="contact-section" id="contato">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<!-- Institutional Address & Direct Contact Block -->
+<div class="lg:col-span-5 space-y-8">
+<div class="flex items-center space-x-4">
+<span class="w-8 h-[1.5px] bg-brand-gold"></span>
+<span class="text-xs uppercase tracking-widest-plus text-brand-gold font-semibold">Atendimento Corporativo</span>
+</div>
+<h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold uppercase leading-tight text-white">
+              Agende uma <br/><span class="text-brand-gold italic font-normal">Consulta Estratégica</span>
+</h2>
+<p class="text-neutral-300 text-sm leading-relaxed">
+              Entre em contato conosco para uma avaliação preliminar e confidencial das demandas jurídicas da sua organização. Nossa equipe retornará com presteza e discrição.
+            </p>
+<div class="space-y-6 pt-4 border-t border-white/10 text-sm">
+<div class="flex items-start space-x-4">
+<div class="w-10 h-10 bg-[#1C334A] border border-brand-gold/40 flex items-center justify-center text-brand-gold flex-shrink-0">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+<div>
+<h6 class="font-serif text-base font-bold text-white uppercase">Sede São Paulo</h6>
+<p class="text-neutral-300 text-xs mt-1">Av. Brigadeiro Faria Lima, 3477, 18º Andar<br/>Itaim Bibi, São Paulo - SP, CEP 04538-133</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-10 h-10 bg-[#1C334A] border border-brand-gold/40 flex items-center justify-center text-brand-gold flex-shrink-0">
+<i class="fa-solid fa-phone"></i>
+</div>
+<div>
+<h6 class="font-serif text-base font-bold text-white uppercase">Telefones</h6>
+<p class="text-neutral-300 text-xs mt-1">+55 (11) 3090-4800 / +55 (11) 99842-1200</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-10 h-10 bg-[#1C334A] border border-brand-gold/40 flex items-center justify-center text-brand-gold flex-shrink-0">
+<i class="fa-solid fa-envelope"></i>
+</div>
+<div>
+<h6 class="font-serif text-base font-bold text-white uppercase">Correio Eletrônico</h6>
+<p class="text-neutral-300 text-xs mt-1">contato@bernsteinadvocacia.com.br</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sophisticated Form -->
+<div class="lg:col-span-7 bg-white text-brand-charcoal p-8 sm:p-12 shadow-2xl border-t-4 border-brand-gold">
+<h3 class="font-serif text-2xl sm:text-3xl font-bold text-brand-navy mb-2">Formulário de Atendimento</h3>
+<p class="text-neutral-500 text-xs mb-8">Todos os dados e comunicações são protegidos por estrito sigilo profissional.</p>
+<form action="#" class="space-y-5" method="POST" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso. Nossa equipe entrará em contato em breve.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-600 mb-2">Nome Completo *</label>
+<input class="w-full text-xs border border-neutral-300 px-4 py-3.5 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold rounded-none" placeholder="Ex.: Rodrigo Siqueira" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-600 mb-2">Empresa / Razão Social</label>
+<input class="w-full text-xs border border-neutral-300 px-4 py-3.5 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold rounded-none" placeholder="Ex.: Siqueira Holding S/A" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-600 mb-2">E-mail Corporativo *</label>
+<input class="w-full text-xs border border-neutral-300 px-4 py-3.5 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold rounded-none" placeholder="nome@suaempresa.com.br" required="" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-600 mb-2">Telefone com DDD *</label>
+<input class="w-full text-xs border border-neutral-300 px-4 py-3.5 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold rounded-none" placeholder="(11) 99999-9999" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-600 mb-2">Área de Interesse Principal</label>
+<select class="w-full text-xs border border-neutral-300 px-4 py-3.5 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold rounded-none text-neutral-700">
+<option value="empresarial">Direito Empresarial &amp; Estruturação</option>
+<option value="societario">Direito Societário &amp; M&amp;A</option>
+<option value="contratos">Contratos Corporativos</option>
+<option value="preventiva">Consultoria Jurídica Preventiva</option>
+<option value="contencioso">Contencioso e Arbitragem Estratégica</option>
+<option value="patrimonial">Gestão e Planejamento Sucessório</option>
+<option value="outro">Outras Demandas Corporativas</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-600 mb-2">Descrição Resumida da Demanda</label>
+<textarea class="w-full text-xs border border-neutral-300 px-4 py-3 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold rounded-none" placeholder="Descreva brevemente os pontos centrais ou objetivos da consulta..." rows="4"></textarea>
+</div>
+<div class="pt-2">
+<button class="w-full py-4 bg-brand-gold hover:bg-brand-goldDark text-white font-sans text-xs uppercase tracking-widest font-semibold transition-all shadow-md" type="submit">
+                  Encaminhar Mensagem à Diretoria
+                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ContactConsultationSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-brand-deep text-neutral-300 pt-16 pb-8 border-t border-white/10" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-6">
+<!-- Top Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+<!-- Brand Info -->
+<div class="lg:col-span-4 space-y-4">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 bg-brand-navy border border-brand-gold flex items-center justify-center text-white font-cinzel text-xl font-bold">
+              B<span class="text-brand-gold">.</span>
+</div>
+<span class="font-cinzel tracking-widest-plus text-lg font-bold text-white">BERNSTEIN</span>
+</div>
+<p class="text-xs text-neutral-400 leading-relaxed max-w-sm">
+            Sociedade de advogados constituída com foco em inteligência jurídica estratégica, defesa contundente de direitos corporativos e preservação de negócios há mais de duas décadas.
+          </p>
+<div class="flex space-x-3 pt-2">
+<a class="w-8 h-8 rounded-none bg-white/5 border border-white/10 flex items-center justify-center text-neutral-300 hover:text-brand-gold hover:border-brand-gold transition-colors text-xs" href="#">
+<i class="fa-brands fa-linkedin-in"></i>
+</a>
+<a class="w-8 h-8 rounded-none bg-white/5 border border-white/10 flex items-center justify-center text-neutral-300 hover:text-brand-gold hover:border-brand-gold transition-colors text-xs" href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a class="w-8 h-8 rounded-none bg-white/5 border border-white/10 flex items-center justify-center text-neutral-300 hover:text-brand-gold hover:border-brand-gold transition-colors text-xs" href="#">
+<i class="fa-brands fa-x-twitter"></i>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="lg:col-span-2">
+<h4 class="font-serif text-sm font-bold text-white tracking-wider uppercase mb-4">Navegação</h4>
+<ul class="space-y-2.5 text-xs text-neutral-400">
+<li><a class="hover:text-brand-gold transition-colors" href="#inicio">Página Inicial</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="#sobre">O Escritório</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="#atuacao">Práticas Jurídicas</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="#experiencia">Corpo Jurídico</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="#contato">Contato &amp; Agendamento</a></li>
+</ul>
+</div>
+<!-- Practice Highlights -->
+<div class="lg:col-span-3">
+<h4 class="font-serif text-sm font-bold text-white tracking-wider uppercase mb-4">Práticas de Destaque</h4>
+<ul class="space-y-2.5 text-xs text-neutral-400">
+<li><a class="hover:text-brand-gold transition-colors" href="#atuacao">Fusões e Aquisições (M&amp;A)</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="#atuacao">Disputas Societárias Complexas</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="#atuacao">Consultoria Preventiva de Riscos</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="#atuacao">Contratos Comerciais Nacionais</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="#atuacao">Planejamento Sucessório Familiar</a></li>
+</ul>
+</div>
+<!-- Compliance & Accreditation Notice -->
+<div class="lg:col-span-3 space-y-3">
+<h4 class="font-serif text-sm font-bold text-white tracking-wider uppercase mb-4">Padrões Institucionais</h4>
+<p class="text-xs text-neutral-400 leading-relaxed">
+            Inscrito na Ordem dos Advogados do Brasil, Seccional de São Paulo. Condução ética regida estritamente pelas disposições do Código de Ética e Disciplina da OAB.
+          </p>
+<div class="pt-2">
+<span class="inline-block px-3 py-1 bg-white/5 border border-brand-gold/30 text-[10px] text-brand-gold tracking-widest uppercase">
+              OAB/SP Nº 18.241 - SOCIEDADE DE ADVOGADOS
+            </span>
+</div>
+</div>
+</div>
+<!-- Bottom Row Copyright -->
+<div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-neutral-500 space-y-4 sm:space-y-0">
+<div>
+          © <script>document.write(new Date().getFullYear())</script> Bernstein Advocacia Empresarial. Todos os direitos reservados.
+        </div>
+<div class="flex space-x-6 text-[11px]">
+<a class="hover:text-neutral-300 transition-colors" href="#">Termos de Uso</a>
+<span>•</span>
+<a class="hover:text-neutral-300 transition-colors" href="#">Política de Privacidade &amp; LGPD</a>
+<span>•</span>
+<a class="hover:text-neutral-300 transition-colors" href="#">Código de Conduta</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<script src="assets/js/main.js" defer></script>
+</body></html>
